@@ -26,7 +26,7 @@ namespace Warmups.Tests
             var actual = _arrays.SameFirstLast(nums);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase(3, new[] { 3, 1, 4 })]
         [TestCase(1, new[] { 3 })]
         [TestCase(5, new[] { 3, 1, 4, 1, 5 })]
@@ -35,7 +35,7 @@ namespace Warmups.Tests
             var actual = _arrays.MakePi(n);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase(new[] { 1, 2, 3 }, new[] { 7, 3 }, true)]
         [TestCase(new[] { 1, 2, 3 }, new[] { 7, 3, 2 }, false)]
         [TestCase(new[] { 1, 2, 3 }, new[] { 1, 3 }, true)]
@@ -44,7 +44,7 @@ namespace Warmups.Tests
             var actual = _arrays.CommonEnd(a, b);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase(new[] { 1, 2, 3 }, 6)]
         [TestCase(new[] { 5, 11, 2 }, 18)]
         [TestCase(new[] { 7, 0, 0 }, 7)]
@@ -62,7 +62,7 @@ namespace Warmups.Tests
             var actual = _arrays.RotateLeft(nums);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase(new[] { 1, 2, 3 }, new[] { 3, 2, 1 })]
         [TestCase(new[] { 5, 9, 11, 1 }, new[] { 1, 11, 9, 5 })]
         [TestCase(new[] { 7, 0, 0 }, new[] { 0, 0, 7 })]
@@ -139,6 +139,7 @@ namespace Warmups.Tests
         [TestCase(new[] { 4, 5 }, new[] { 1, 2, 3 }, new[] { 4, 5 })]
         [TestCase(new[] { 4 }, new[] { 1, 2, 3 }, new[] { 4, 1 })]
         [TestCase(new int[] { }, new[] { 1, 2 }, new[] { 1, 2 })]
+        [TestCase(new[] { 4, 5, 6 }, new[] { 1, 2, 3 }, new[] { 4, 5 })]
         public void Make2Test(int[] a, int[] b, int[] expected)
         {
             var actual = _arrays.Make2(a, b);

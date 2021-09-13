@@ -4,6 +4,6 @@ LastChars("last", "chars") -> "ls"
 LastChars("yo", "mama") -> "ya"
 LastChars("hi", "") -> "h@"
 
-public string LastChars(string str) {
+public string LastChars(string a, string b) {
 
 }

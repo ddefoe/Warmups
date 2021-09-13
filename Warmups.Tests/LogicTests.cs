@@ -11,6 +11,7 @@ namespace Warmups.Tests
         [TestCase(30, false, false)]
         [TestCase(50, false, true)]
         [TestCase(70, true, true)]
+        [TestCase(20, true, false)]
         public void GreatPartyTest(int n, bool b, bool expected)
         {
             var actual = _logic.GreatParty(n, b);
@@ -25,7 +26,7 @@ namespace Warmups.Tests
             var actual = _logic.CanHazTable(x, y);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase(70, false, true)]
         [TestCase(95, false, false)]
         [TestCase(95, true, true)]
@@ -88,7 +89,7 @@ namespace Warmups.Tests
             var actual = _logic.SpecialEleven(n);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase(20, false)]
         [TestCase(21, true)]
         [TestCase(22, true)]
@@ -137,6 +138,7 @@ namespace Warmups.Tests
         [TestCase(2, 5, 11, false, true)]
         [TestCase(5, 7, 6, false, false)]
         [TestCase(5, 5, 7, true, true)]
+        [TestCase(6, 5, 5, true, false)]
         public void InOrderEqualTest(int x, int y, int z, bool b, bool expected)
         {
             var actual = _logic.InOrderEqual(x, y, z, b);
@@ -151,10 +153,11 @@ namespace Warmups.Tests
             var actual = _logic.LastDigit(x, y, z);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase(2, 3, true, 5)]
         [TestCase(3, 3, true, 7)]
         [TestCase(3, 3, false, 6)]
+        [TestCase(6, 6, true, 7)]
         public void RollDiceTest(int x, int y, bool b, int expected)
         {
             var actual = _logic.RollDice(x, y, b);
