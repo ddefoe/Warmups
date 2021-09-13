@@ -41,6 +41,7 @@ namespace Warmups.Tests
         [TestCase("dffa", false)]
         [TestCase("tx", false)]
         [TestCase("txx", true)]
+        [TestCase("x", false)]
         public void DoubleXTest(string str, bool expected)
         {
             var actual = _loops.DoubleX(str);
@@ -134,6 +135,7 @@ namespace Warmups.Tests
         [TestCase("yakpak", "pak")]
         [TestCase("pakyak", "pak")]
         [TestCase("yak123ya", "123ya")]
+        [TestCase("ybkpbk", "pbk")]
         public void DoNotYakTest(string str, string expected)
         {
             var actual = _loops.DoNotYak(str);

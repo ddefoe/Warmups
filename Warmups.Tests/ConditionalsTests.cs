@@ -17,7 +17,7 @@ namespace Warmups.Tests
             var actual = _conditionals.AreWeInTrouble(a, b);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase(false, false, true)]
         [TestCase(true, false, false)]
         [TestCase(false, true, true)]
@@ -26,7 +26,7 @@ namespace Warmups.Tests
             var actual = _conditionals.CanSleepIn(a, b);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase(1, 2, 3)]
         [TestCase(3, 2, 5)]
         [TestCase(2, 2, 8)]
@@ -35,7 +35,7 @@ namespace Warmups.Tests
             var actual = _conditionals.SumDouble(a, b);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase(23, 4)]
         [TestCase(10, 11)]
         [TestCase(21, 0)]
@@ -75,6 +75,8 @@ namespace Warmups.Tests
         [TestCase(1, -1, false, true)]
         [TestCase(-1, 1, false, true)]
         [TestCase(-4, -5, true, true)]
+        [TestCase(-4, -5, false, false)]
+        [TestCase(1, 1, false, false)]
         public void PosNegTest(int x, int y, bool b, bool expected)
         {
             var actual = _conditionals.PosNeg(x, y, b);
@@ -196,6 +198,7 @@ namespace Warmups.Tests
         [TestCase("mix snacks", true)]
         [TestCase("pix snacks", true)]
         [TestCase("piz snacks", false)]
+        [TestCase("pixel", true)]
         public void IxStartTest(string str, bool expected)
         {
             var actual = _conditionals.IxStart(str);
