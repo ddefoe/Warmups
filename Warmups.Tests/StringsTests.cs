@@ -16,7 +16,7 @@ namespace Warmups.Tests
             var actual = _strings.SayHi(name);
             Assert.AreEqual(expected, actual);
         }
-        
+
         [TestCase("Hi", "Bye", "HiByeByeHi")]
         [TestCase("Yo", "Alice", "YoAliceAliceYo")]
         [TestCase("What", "Up", "WhatUpUpWhat")]
@@ -232,6 +232,9 @@ namespace Warmups.Tests
         [TestCase("xHi", "Hi")]
         [TestCase("Hxix", "Hxi")]
         [TestCase("x", "")]
+        [TestCase("xx", "")]
+        [TestCase("xxx", "x")]
+        [TestCase("Hi", "Hi")]
         [TestCase("", "")]
         public void StripXTest(string s, string expected)
         {

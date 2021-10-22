@@ -85,7 +85,7 @@ namespace Warmups.Tests
 
         [TestCase("candy", "not candy")]
         [TestCase("x", "not x")]
-        [TestCase("bad", "not bad")]
+        [TestCase("not bad", "not bad")]
         public void NotStringTest(string s, string expected)
         {
             var actual = _conditionals.NotString(s);
@@ -152,7 +152,7 @@ namespace Warmups.Tests
         [TestCase(120, -1, true)]
         [TestCase(-1, 120, true)]
         [TestCase(2, 120, false)]
-        public void StartHiTest(int x, int y, bool expected)
+        public void IcyHotTest(int x, int y, bool expected)
         {
             var actual = _conditionals.IcyHot(x, y);
             Assert.AreEqual(expected, actual);
