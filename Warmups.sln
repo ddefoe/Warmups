@@ -1,11 +1,11 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warmups.BLL", "Warmups.BLL\Warmups.BLL.csproj", "{9C15FFF7-8ACA-46DB-AA90-CDF9268B649F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warmups.BLL", "Warmups.BLL\Warmups.BLL.csproj", "{9C15FFF7-8ACA-46DB-AA90-CDF9268B649F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Warmups.Tests", "Warmups.Tests\Warmups.Tests.csproj", "{72F550A5-7540-47D1-B0AF-C5D53502CA03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Warmups.Tests", "Warmups.Tests\Warmups.Tests.csproj", "{72F550A5-7540-47D1-B0AF-C5D53502CA03}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
