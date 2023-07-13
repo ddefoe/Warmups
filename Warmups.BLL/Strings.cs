@@ -24,7 +24,7 @@ namespace Warmups.BLL
         }
 
         // The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. In this example, the "i" tag 
-        // makes <i> and </i> which surround the word "Yay". Given tag and word strings, create the HTML string with tags 
+        // makes <i> and </i> which surround the word "Yay". Given tag and content strings, create the HTML string with tags 
         // around the word, e.g. "<i>Yay</i>". 
         //    MakeTags("i", "Yay") -> "<i>Yay</i>"
         //    MakeTags("i", "Hello") -> "<i>Hello</i>"
@@ -34,8 +34,8 @@ namespace Warmups.BLL
             throw new NotImplementedException();
         }
 
-        // Given an "out" string length 4, such as "<<>>", and a word, return a new string where the word is in the middle of 
-        // the out string, e.g. "<<word>>". Hint: Substrings are your friend here 
+        // Given a container string length 4, such as "<<>>", and a word, return a new string where the word is in the middle of 
+        // the container string, e.g. "<<word>>". Hint: Substrings are your friend here 
         //    InsertWord("<<>>", "Yay") -> "<<Yay>>"
         //    InsertWord("<<>>", "WooHoo") -> "<<WooHoo>>"
         //    InsertWord("[[]]", "word") -> "[[word]]"
@@ -212,7 +212,7 @@ namespace Warmups.BLL
         }
 
         // Given two strings, append them together (known as "concatenation") and return the result. However, if the strings 
-        // are different lengths, omit chars from the longer string so it is the same length as the shorter string. So "Hello" 
+        // are different lengths, omit chars from the beginning of the longer string so it is the same length as the shorter string. So "Hello" 
         // and "Hi" yield "loHi". The strings may be any length. 
         //    MinCat("Hello", "Hi") -> "loHi"
         //    MinCat("Hello", "java") -> "ellojava"

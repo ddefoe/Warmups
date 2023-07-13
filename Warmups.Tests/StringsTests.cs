@@ -5,7 +5,7 @@ namespace Warmups.Tests
 {
     public class StringsTests
     {
-        private Strings _strings = new Strings();
+        private Strings _strings = new();
 
         [Theory]
         [InlineData("Bob", "Hello Bob!")]
